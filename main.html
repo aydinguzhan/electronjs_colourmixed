@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First electron app</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            
+        }
+        .conteiner{
+            display : flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            width: 100vw;
+            height:100vh;
+            background-color:white;
+        }
+        .box{
+            background-color:whitesmoke;
+            margin-right:50px;
+
+        }
+
+        #leftBar{
+            width:20%;
+            height:100vh;
+            background-color: whitesmoke;
+            border:1px solid gray;
+        }
+        .leftButton{
+            width:100px;
+            height:100px;
+            margin:10px;
+            border-radius:20% ;
+        }
+        button:hover{
+            box-shadow:-2px 10px 20px 0px gray;
+        }
+
+
+        .list{
+            list-style:none;
+        }
+
+        #right{
+            display:flex;
+            margin-top:10px;
+            width:100%;
+            height:100px;
+            background-color: whitesmoke;
+            border:1px solid gray;
+            border-radius:16px;
+        }
+
+    </style>                
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box" id="leftBar">
+            <ol class="list">
+                <li><button class="leftButton" id="btn" onclick="redColour()">kırmızı</button></li>
+                <li><button class="leftButton" id="wbtn" onclick="whiteColour()" >beyaz</button></li>
+                <li><button class="leftButton" id="obtn" onclick="orangeColour()">turuncu</button> </li>
+                <li><button class="leftButton" id="bbtn"onclick="blackColour()">siyah</button></li>
+            </ol>
+        </div>
+        <div class="box" id="right"></div>
+    </div>
+    <script src="puppeeter.js"></script>
+</body>
+</html>         
